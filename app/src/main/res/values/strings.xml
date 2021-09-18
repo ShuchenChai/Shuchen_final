@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Birthday_card</string>
+    <string name="con_word1">Happy</string>
+    <string name="con_word2">Birthday</string>
+    <string name="con_word3">柴舒晨</string>
+    <string name="text1">0</string>
+
+    <string name="btn1">+3 PointS</string>
+    <string name="btn2">+2 PointS</string>
+    <string name="btn3">+1 PointS</string>
+    <string name="btn4">Reset</string>
+
+    <string name="Tview1">计算结果：</string>
+    <string name="Btn1">确定</string>
+</resources>
