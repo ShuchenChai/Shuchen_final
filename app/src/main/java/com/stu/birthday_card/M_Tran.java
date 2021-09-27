@@ -20,10 +20,11 @@ public class M_Tran extends AppCompatActivity {
 
     public void click_m(View btn){
         Double out_i;
+        out_i =0.0;
         TextView out_m = findViewById(R.id.out_m);
         EditText in_Rmb = findViewById(R.id.in_Rmb);
         if(TextUtils.isEmpty(in_Rmb.getText().toString())){
-            Toast.makeText(getApplicationContext(),"输入不能为空",Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),"输入不能为空",Toast.LENGTH_SHORT).show();
         }
         else {
             Double Rmb = Double.parseDouble(in_Rmb.getText().toString());
