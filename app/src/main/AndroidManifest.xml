@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Birthday_card">
         <activity
+            android:name=".M_Tran"
+            android:exported="true" />
+        <activity
             android:name=".Tran2"
             android:exported="true" />
         <activity

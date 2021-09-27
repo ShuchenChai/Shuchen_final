@@ -22,8 +22,6 @@ public class Point extends AppCompatActivity{
     }
     public void clickb(View btn){
         Log.i("111","11111");
-
-
         if(btn.getId() == R.id.btn3){
             Log.i("111","11111");
             score_A = score_A + 3;
