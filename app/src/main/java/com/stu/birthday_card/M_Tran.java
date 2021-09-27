@@ -19,7 +19,7 @@ public class M_Tran extends AppCompatActivity {
 
 
     public void click_m(View btn){
-        double out = 0;
+        Double out_i;
         TextView out_m = findViewById(R.id.out_m);
         EditText in_Rmb = findViewById(R.id.in_Rmb);
         if(TextUtils.isEmpty(in_Rmb.getText().toString())){
@@ -28,17 +28,17 @@ public class M_Tran extends AppCompatActivity {
         else {
             Double Rmb = Double.parseDouble(in_Rmb.getText().toString());
             if (btn.getId() == R.id.Dollar) {
-                out = Rmb*0.1548;
+                out_i = Rmb*0.1548;
             }
             else if (btn.getId() == R.id.Euro) {
-                out = Rmb*0.1324;
+                out_i = Rmb*0.1324;
             }
             else{
-                out = Rmb*182;
+                out_i = Rmb*182;
             }
 
         }
-        out_m.setText(String.valueOf(out));
+        out_m.setText(String.valueOf(out_i));
 
     }
 
