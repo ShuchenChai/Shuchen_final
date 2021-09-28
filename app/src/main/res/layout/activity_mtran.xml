@@ -54,5 +54,13 @@
             android:layout_height="wrap_content"
             android:onClick="click_m"
             android:text="Won" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="click_config"
+            android:text="Config" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
