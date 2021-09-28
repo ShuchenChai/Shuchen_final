@@ -141,6 +141,7 @@ public class M_Tran extends AppCompatActivity implements Runnable{
         handler.sendMessage(msg);
         Log.i("iii","已发送");
 
+        //只能在线程中运行网络访问
         URL url = null;
         try{
             url = new URL("https://www.boc.cn/sourcedb/whpj/index.html");
