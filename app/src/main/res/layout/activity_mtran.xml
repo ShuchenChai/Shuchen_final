@@ -17,6 +17,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:ems="10"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:gravity="center"
             android:hint="Input RMB"
             android:inputType="numberDecimal"
@@ -34,6 +36,8 @@
         <Button
             android:id="@+id/Dollar"
             android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
             android:onClick="click_m"
@@ -43,6 +47,8 @@
             android:id="@+id/Euro"
             android:layout_width="match_parent"
             android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:layout_height="wrap_content"
             android:onClick="click_m"
             android:text="Euro" />
@@ -51,16 +57,30 @@
             android:id="@+id/Won"
             android:layout_width="match_parent"
             android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:layout_height="wrap_content"
             android:onClick="click_m"
             android:text="Won" />
 
         <Button
             android:id="@+id/button4"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:onClick="click_config"
             android:text="Config" />
+
+        <Button
+            android:id="@+id/List1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="openlist"
+            android:text="Openlist" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

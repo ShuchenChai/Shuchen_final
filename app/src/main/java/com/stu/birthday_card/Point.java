@@ -1,5 +1,6 @@
 package com.stu.birthday_card;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -20,10 +21,24 @@ public class Point extends AppCompatActivity{
         setContentView(R.layout.activity_point);
 
     }
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState){
+        super.onSaveInstanceState(outState);
+        outState.putInt("score_A",score_A);
+        outState.putInt("score_B",score_B);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        score_A = savedInstanceState.getInt("score_A",0);
+        score_B = savedInstanceState.getInt("score_B",0);
+        showScore();
+    }
+
     public void clickb(View btn){
-        Log.i("111","11111");
         if(btn.getId() == R.id.btn3){
-            Log.i("111","11111");
             score_A = score_A + 3;
         }
         else if(btn.getId() == R.id.btn2){
@@ -45,10 +60,12 @@ public class Point extends AppCompatActivity{
             score_A = 0;
             score_B = 0;
         }
+        showScore();
+    }
+    public void showScore(){
         TextView out1 = findViewById(R.id.text1);
         TextView out2 = findViewById(R.id.text2);
         out1.setText(String.valueOf(score_A));
         out2.setText(String.valueOf(score_B));
-
     }
 }
