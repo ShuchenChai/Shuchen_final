@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Birthday_card">
         <activity
+            android:name=".Mtran_cau"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RateListActivity2"
+            android:exported="true" />
+        <activity
             android:name=".RateListActivity"
             android:exported="true" />
         <activity
