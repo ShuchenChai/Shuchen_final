@@ -66,6 +66,7 @@ public class myRun implements Runnable{
                         while (hsrc.find()){
                             if (hsrc.group(1).contains("//m.87g.com/")) {
                                 hurl = hsrc.group(1);
+
                             }
                         }
                         Log.i(TAG, "run: name = " + name);
