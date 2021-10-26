@@ -25,7 +25,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GetAll extends AppCompatActivity implements AdapterView.OnItemClickListener{
-
     private static final String TAG = "GetAll";
     Handler handler;
     ListView Onmyoji_list;
@@ -61,17 +60,17 @@ public class GetAll extends AppCompatActivity implements AdapterView.OnItemClick
 
         Object itemAtPosition = Onmyoji_list.getItemAtPosition(position);
         Item item = (Item) itemAtPosition;
-        String titlestr = item.getCname();
-        String detailstr = item.getCval();
-        String img = item.getImg();
+        String Spname = item.getCname();
+        String Sphurl = item.getCval();
+        String Spimg = item.getImg();
 
-        Log.i(TAG, "title = "+titlestr);
-        Log.i(TAG, "detail = "+detailstr);
-        Log.i(TAG, "onItemClick: img = "+ img);
-        Intent intent = new Intent(this,Mtran_cau.class);
-        intent.putExtra("title",titlestr);
-        intent.putExtra("detail",detailstr);
-        intent.putExtra("img",img);
+        Log.i(TAG, "name = "+Spname);
+        Log.i(TAG, "hurl = "+Sphurl);
+        Log.i(TAG, "img = "+ Spimg);
+        Intent intent = new Intent(this,ShowDetails.class);
+        intent.putExtra("title",Spname);
+        intent.putExtra("detail",Sphurl);
+        intent.putExtra("img",Spimg);
         startActivityForResult(intent,50);
     }
 }

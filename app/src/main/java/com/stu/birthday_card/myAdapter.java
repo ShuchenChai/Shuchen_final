@@ -5,9 +5,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+//import com.stu.birthday_card.glide.Glide;
+import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -33,11 +36,12 @@ public class myAdapter extends ArrayAdapter {
         }
 
         Item item = (Item) getItem(position);
-        TextView title = (TextView) itemView.findViewById(R.id.itemTitle);
-        TextView detail = (TextView) itemView.findViewById(R.id.itemDetail);
+        ImageView pic = itemView.findViewById(R.id.pics);
+        TextView name = itemView.findViewById(R.id.names);
 
-        title.setText("Title:"+item.getCname());
-        detail.setText("detail:"+item.getCval());
+        name.setText(item.getCname());
+        String picurl = item.getImg();
+        Glide.with(name).load("https:" + picurl).into(pic);
 
         return itemView;
     }

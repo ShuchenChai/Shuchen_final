@@ -16,4 +16,11 @@
     <string name="title_Onmyoji">阴阳师式神图鉴</string>
     <string name="getAll_button">查询图鉴</string>
     <string name="myAll_button">我的图鉴</string>
+    <string name="name_Onmyoji">式神名称</string>
+    <string name="CV_Onmyoji">CV</string>
+    <string name="Rare_Onmyoji">稀有度</string>
+    <string name="Type_Onmyoji">类型</string>
+    <string name="DJ_Onmyoji">斗技指数</string>
+    <string name="REMED_Onmyoji">推荐指数</string>
+
 </resources>
