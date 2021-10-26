@@ -18,7 +18,7 @@ public class myAdapter extends ArrayAdapter {
     private static final String TAG = "MyAdapter";
     public myAdapter(@NonNull Context context,
                      int resource,
-                     @NonNull ArrayList<HashMap<String,String>> list) {
+                     @NonNull ArrayList<Item> list) {
         super(context, resource, list);
     }
 
@@ -32,12 +32,12 @@ public class myAdapter extends ArrayAdapter {
                     false);
         }
 
-        Map<String,String> map = (Map<String,String>) getItem(position);
+        Item item = (Item) getItem(position);
         TextView title = (TextView) itemView.findViewById(R.id.itemTitle);
         TextView detail = (TextView) itemView.findViewById(R.id.itemDetail);
 
-        title.setText("Title:"+map.get("ItemTitle"));
-        detail.setText("detail:"+map.get("ItemDetail"));
+        title.setText("Title:"+item.getCname());
+        detail.setText("detail:"+item.getCval());
 
         return itemView;
     }

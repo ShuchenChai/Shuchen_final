@@ -12,4 +12,8 @@
 
     <string name="Tview1">计算结果：</string>
     <string name="Btn1">确定</string>
+
+    <string name="title_Onmyoji">阴阳师式神图鉴</string>
+    <string name="getAll_button">查询图鉴</string>
+    <string name="myAll_button">我的图鉴</string>
 </resources>

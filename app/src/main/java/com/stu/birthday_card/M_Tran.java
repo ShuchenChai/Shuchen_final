@@ -181,7 +181,7 @@ public class M_Tran extends AppCompatActivity implements Runnable{
     }
 
     public void openlist(View btn){
-        Intent list = new Intent(this,RateListActivity.class);
+        Intent list = new Intent(this,GetAll.class);
         startActivity(list);
     }
 
