@@ -33,7 +33,7 @@ public class GetAll extends AppCompatActivity implements AdapterView.OnItemClick
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_get_all);
-        Onmyoji_list= findViewById(R.id.Show_list);
+        Onmyoji_list = findViewById(R.id.Show_list);
         Onmyoji_list.setOnItemClickListener(GetAll.this);
 
         handler = new Handler(Looper.myLooper()){
@@ -60,17 +60,11 @@ public class GetAll extends AppCompatActivity implements AdapterView.OnItemClick
 
         Object itemAtPosition = Onmyoji_list.getItemAtPosition(position);
         Item item = (Item) itemAtPosition;
-        String Spname = item.getCname();
         String Sphurl = item.getCval();
-        String Spimg = item.getImg();
 
-        Log.i(TAG, "name = "+Spname);
         Log.i(TAG, "hurl = "+Sphurl);
-        Log.i(TAG, "img = "+ Spimg);
         Intent intent = new Intent(this,ShowDetails.class);
-        intent.putExtra("title",Spname);
-        intent.putExtra("detail",Sphurl);
-        intent.putExtra("img",Spimg);
+        intent.putExtra("hurl_Onmyoji",Sphurl);
         startActivityForResult(intent,50);
     }
 }
