@@ -31,8 +31,6 @@ public class myRun implements Runnable{
         try{
             Thread.sleep(3000);
             Document doc = Jsoup.connect("https://m.87g.com/yys/38101.html").get();
-
-
                 Elements Tables = doc.getElementsByTag("table");
                 String pic = null;
                 String name = null;

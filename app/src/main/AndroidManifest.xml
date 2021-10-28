@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Birthday_card">
         <activity
+            android:name=".Config_team"
+            android:exported="true" />
+        <activity
+            android:name=".ShowMyall"
+            android:exported="true" />
+        <activity
             android:name=".ShowDetails"
             android:exported="true">
             <intent-filter>

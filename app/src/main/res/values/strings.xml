@@ -1,26 +1,26 @@
 <resources>
-    <string name="app_name">Birthday_card</string>
-    <string name="con_word1">Happy</string>
-    <string name="con_word2">Birthday</string>
-    <string name="con_word3">柴舒晨</string>
-    <string name="text1">0</string>
-
-    <string name="btn1">+3 PointS</string>
-    <string name="btn2">+2 PointS</string>
-    <string name="btn3">+1 PointS</string>
-    <string name="btn4">Reset</string>
-
-    <string name="Tview1">计算结果：</string>
-    <string name="Btn1">确定</string>
+    <string name="app_name">Onmyoji</string>
+    <string name="myname">柴舒晨</string>
+    <string name="nodata">加载中</string>
 
     <string name="title_Onmyoji">阴阳师式神图鉴</string>
     <string name="getAll_button">查询图鉴</string>
     <string name="myAll_button">我的图鉴</string>
+    <string name="Save">保存</string>
+    <string name="Showmyall">我的队伍</string>
+    <string name="Config">队伍配置</string>
+
     <string name="name_Onmyoji">式神名称</string>
     <string name="CV_Onmyoji">CV</string>
     <string name="Rare_Onmyoji">稀有度</string>
     <string name="Type_Onmyoji">类型</string>
     <string name="DJ_Onmyoji">斗技指数</string>
     <string name="REMED_Onmyoji">推荐指数</string>
+    <string name="level">等级</string>
 
+    <string name="Cname1">赤影妖刀姬</string>
+    <string name="Cname2">炼狱茨木童子</string>
+    <string name="Cname3">缘结神</string>
+    <string name="Cname4">紧那罗</string>
+    <string name="Cname5">千姬</string>
 </resources>

@@ -18,5 +18,10 @@ public class MainActivity extends AppCompatActivity {
         Intent getall = new Intent(this,GetAll.class);
         startActivity(getall);
     }
+
+    public void openMy(View btn){
+        Intent ShowMyall = new Intent(this,ShowMyall.class);
+        startActivity(ShowMyall);
+    }
 }
 

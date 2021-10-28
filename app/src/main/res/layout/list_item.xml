@@ -19,7 +19,7 @@
             android:id="@+id/pics"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            tools:srcCompat="@drawable/tubiao" />
+            tools:srcCompat="@drawable/onmyoji" />
 
         <TextView
             android:id="@+id/names"

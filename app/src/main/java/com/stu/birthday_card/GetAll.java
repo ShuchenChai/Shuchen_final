@@ -33,6 +33,8 @@ public class GetAll extends AppCompatActivity implements AdapterView.OnItemClick
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_get_all);
+
+
         Onmyoji_list = findViewById(R.id.Show_list);
         Onmyoji_list.setOnItemClickListener(GetAll.this);
 
@@ -43,6 +45,7 @@ public class GetAll extends AppCompatActivity implements AdapterView.OnItemClick
                     ArrayList<Item> list2 = (ArrayList<Item>) msg.obj;
                     myAdapter adapter = new myAdapter(GetAll.this,R.layout.list_item,list2);
                     Onmyoji_list.setAdapter(adapter);
+                    Onmyoji_list.setEmptyView(findViewById(R.id.nodata));
 
                 }
 
